@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('pdf', 'PdfController@index');
+Route::get('export', 'PdfController@export')->name('export.pdf');
